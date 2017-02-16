@@ -1,0 +1,5 @@
+hash_salt_helper.show:
+  title: 'Show hash salt'
+  description: 'Show hash salt'
+  parent: 'system.admin_config_development'
+  route_name: hash_salt_helper.show

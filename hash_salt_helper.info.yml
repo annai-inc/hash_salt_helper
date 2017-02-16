@@ -1,0 +1,6 @@
+name: hash salt helper
+type: module
+description: Show value of hash salt
+core: 8.x
+package: ANNAI
+version: 8.x-1.0

@@ -1,0 +1,21 @@
+<p>Your hash salt is: <b>{{ salt }}</b></p>
+
+<p>If you'd like to restore the site from the Pantheon to local environment, please create <b>sites/default/settings.local.php</b> as follow:
+<div style="background: #f6f6f2;"><pre style="margin: 0.5em;"><code>
+&lt;?php
+// Local development configuration.
+if (!defined('PANTHEON_ENVIRONMENT')) {
+  $settings['hash_salt'] = "{{ salt }}";
+  $databases['default']['default'] = array(
+    'database' => 'DATABASE_NAME',
+    'username' => 'USER_NAME',
+    'password' => 'PASSWORD',
+    'prefix' => '',
+    'host' => 'localhost',
+    'port' => '3306',
+    'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+    'driver' => 'mysql',
+  );
+}
+</code></pre></div>
+</p>

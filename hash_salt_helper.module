@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function hash_salt_helper_theme($existing, $type, $theme, $path) {
+  return [
+    'hash_salt_helper_show' => [
+      'variables' => ['salt' => null],
+    ],
+  ];
+}
+

@@ -1,0 +1,7 @@
+hash_salt_helper.show:
+  path: 'admin/config/development/hash_salt_helper/show'
+  defaults:
+    _controller: '\Drupal\hash_salt_helper\Controller\HashSaltHelperController::show'
+    _title: 'hash salt'
+  requirements:
+    _permission: 'administer site configuration'
