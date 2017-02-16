@@ -1,4 +1,4 @@
-name: hash salt helper
+name: Hash Salt Helper
 type: module
 description: Show value of hash salt
 core: 8.x
